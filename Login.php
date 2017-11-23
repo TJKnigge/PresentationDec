@@ -1,8 +1,21 @@
+<?php
+
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal (popups)
+    session_start();
+
+?>
+
 <html>
     <head>
         
         <link rel = "stylesheet" type = "text/css" href="StyleSheet.css">
-               
+            
+        <script>
+                
+        
+        </script>
+        
+        
     </head>
     <body>
        
@@ -26,7 +39,4 @@
         
     </body>
 </html>
-
-<?php
-
 

@@ -16,7 +16,6 @@
         
     </head>
     <body>
-       
              
         <div id = "form">
             <form method="POST" > 
@@ -27,7 +26,7 @@
                     <li><a href="#contact">Contact</a></li>
                     <li style="float:right"><a href="#logout">Logout</a></li>
                     <li style="float:right"><a href="#regiter">Registert</a></li>
-                    <li style="float:right"><a onclick="login()" href="#login" >Login</a></li>
+                    <li style="float:right"><a onclick="login()"  id="login" href="#login" >Login</a></li>
                 </ul>
             
             </form>   
