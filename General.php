@@ -8,10 +8,10 @@
         
         <style>
           body  {
-                    background-image: url(Naamloos2.jpg);
+                    background-image: url(Naamloos5.jpg);
                     display:block;
-                    width: 100%;
-                    height: 100%;
+                    width: auto;
+                    height: auto;
                     position: fixed; left: 0; top: 0;
                     background-repeat: no-repeat;
                     background-size: cover;
@@ -29,7 +29,7 @@
        
         <header> Fabric forms  
             <br>  
-        <a class= "Quilts"> Quilts with love</a> </header>        
+        <a class= "subtxt"> Quilts with love</a> </header>        
 
         
     </body>

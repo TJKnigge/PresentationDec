@@ -9,7 +9,7 @@
                        padding-bottom: 20px;
             }
              
-            .Quilts{   color: #00ff00;
+            .subtxt{   color: #00ff00;
                        text-align: center;
                        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
                        font-size: 30px;
@@ -55,10 +55,10 @@
             }
 
             div.transbox p {
-                       margin: 2%;
+                       margin: 5%;
                        line-height: 1.2;
                        font-weight: bold;
-                       color: #000000;
+                       color: black;
                        padding-left: 60px;
                        padding-right: 60px;
             }
