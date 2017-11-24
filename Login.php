@@ -2,7 +2,7 @@
 
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal (popups)
     session_start();
-
+    include 'General.php';
 ?>
 
 <html>
@@ -19,6 +19,10 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal (popups)
     </head>
     <body>
        
+        <div class="modal-content">
+    <span class="close">&times;</span>
+    
+
             <div id = "form">
             <form method="POST" > 
 <!--                action="login_session.php">-->
@@ -35,8 +39,42 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal (popups)
           
             </form>   
         </div> 
-        
+      
+        </div>  
         
     </body>
 </html>
+<?php
 
+
+    
+
+    if (isset($_POST)& !empty($_POST)){
+                
+       
+    
+        $username=$_POST['user'];
+        $password=$_POST['passw'];
+
+        $sql="select * FROM `users` WHERE `username`='$username' and `password`= '$password'";
+        
+        $result= mysqli_query($conn, $sql)
+               or die("Failed to connect to DB" . mysqli_error());
+
+        $row= mysqli_fetch_array($result);
+        if($row['username'] == $username && $row['password'] == $password){
+           echo "<div style='text-align:center'><h4>Login success full! Welcome " .  $row['username']. "</h4></div>";
+           
+           
+       } else {
+            echo "<div style='text-align:center'><h4>Sorry, you are not in our database " . $username . "!</h4></div>";
+
+            echo "<div style='text-align:center'><h4>Please register as a new user</h4></div>";
+           
+       }
+       
+        
+        
+      }
+      
+?>

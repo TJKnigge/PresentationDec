@@ -12,7 +12,6 @@
                     display:block;
                     width: auto;
                     height: auto;
-                    position: fixed; left: 0; top: 0;
                     background-repeat: no-repeat;
                     background-size: cover;
           }  
