@@ -1,3 +1,4 @@
+
 <?php
 
         include 'General.php';
@@ -9,7 +10,8 @@
              
         
         <form>
-            <div  id="background">
+            <div  id="background">        
+            <div class="background" id="background">
                 <div class="transbox" id="transbox">
                     <p> Toen ik nog kleding voor de kinderen maakte, zag ik vaak prachtige quilts in de patroonbladen staan.<br><br>
                         Ik besloot dat ik er ooit een zou gaan maken en bewaarde vele patronen voor als ik meer tijd zou hebben. 
@@ -27,7 +29,6 @@
                 </div>
             </div>
             </form>
-    </body>
-</html>
+
 
 
