@@ -1,5 +1,31 @@
 <?php
 
+function showHeader(){
+        $returnString = <<<HEADSTRING
+        <html>
+            <head>
+                <link rel = "stylesheet" type = "text/css" href = "StyleSheet.css">
+                <script src="_appsojs.js"></script>
+            </head>
+        <body>
+        
+            <header> Fabric forms
+                <br>  
+            <a class= "subtxt"> Quilts with love</a> </header>   
+        
+        <a href=logout.php >log out</a>
+
+HEADSTRING;
+    return $returnString;
+}
+function showFooter(){
+    $returnString = "\t</body>\n";
+    $returnString .= "</html>";
+    return $returnString;
+}
+
+
+
 session_start();
 
     $hostname = 'localhost';       
@@ -14,14 +40,16 @@ session_start();
             die("DB failed to connect" . mysqli_error($conn));
 
         }
+        
+          
 ?>
         
-<html>
-    <head>
-        <meta charset="UTF-8">
+
+    
+<!--        <meta charset="UTF-8">
         <title>PresentationDec</title>
           
-        <link rel = "stylesheet" type = "text/css" href="StyleSheet.css">
+        <link rel = "stylesheet" type = "text/css" href="StyleSheet.css">-->
         <script>
                 function login(){
                     document.location="Login.php";
@@ -30,12 +58,11 @@ session_start();
      
         </script>
                
-    </head>
-    <body>
+    
        
-        <header> Fabric forms ff  
+<!--        <header> Fabric forms  
             <br>  
-        <a class= "subtxt"> Quilts with love</a> </header>        
+        <a class= "subtxt"> Quilts with love</a> </header>        -->
 
         <div id = "form">
             <form method="POST" > 
