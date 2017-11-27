@@ -1,0 +1,76 @@
+            body  {
+                    background-image: url(Naamloos5.jpg);
+                    display:block;
+                    width: auto;
+                    height: auto;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+            }  
+ 
+
+            header{    background-color: #000099;
+                       color: #00ff00;
+                       text-align: center;
+                       font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+                       font-size: 60px;
+                       letter-spacing: 5px;
+                       padding-top: 20px;
+                       padding-bottom: 20px;
+            }
+             
+            .subtxt{   color: #00ff00;
+                       text-align: center;
+                       font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+                       font-size: 30px;
+                       letter-spacing: 5px;
+            } 
+            
+            ul {       list-style-type: none;
+                       margin: 0;
+                       padding: 0;
+                       overflow: hidden;
+                       border: 1px solid #e7e7e7;
+                       background-color: #ff0000;
+            }
+
+            li {       float: left;
+            }
+
+            li a {     display: block;
+                       color: black;
+                       text-align: center;
+                       padding: 14px 16px;
+                       text-decoration: none;
+            }
+
+            li a:hover:not(.active) {
+                       background-color: #ddd;
+            }
+
+            li a.active {
+                       color: white;
+                       background-color: #4CAF50;
+            }
+            
+            div.transbox {
+                       margin-top: 100px;
+                       margin-left: 350px;
+                       margin-right: 350px;
+                       margin-bottom: 10px;
+                       background-color: #ffffff;
+                       border: 1px solid black;
+                       opacity: 0.6;
+                       filter: alpha(opacity=60);
+            }
+            
+            div.transbox p {
+                       margin: 5%;
+                       line-height: 1.2;
+                       font-weight: bold;
+                       color: black;
+                       padding-left: 60px;
+                       padding-right: 60px;
+            }
+          
+
+           
