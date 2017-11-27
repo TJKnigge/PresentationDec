@@ -5,7 +5,6 @@
 ?>
 
 
-       
             <div id = "form">
             <form method="POST" > 
 <!--                action="login_session.php">-->
@@ -19,9 +18,10 @@
                     <p>
                     <button type="submit" id="btn" value="login" > Login </button>
                     </p>
-          
+            
             </form>   
         </div> 
+
         
     </body>
 </html>
@@ -32,6 +32,13 @@ if (isset($_POST)& !empty($_POST)){
         $username=$_POST['user'];
         $password=$_POST['passw'];
 
+        $username = stripcslashes($username);
+        $password = stripcslashes($password);
+//        $username = mysqli_real_escape_string($username);
+//        $password = mysqli_real_escape_string($password);
+        
+        
+        
         $sql="select * FROM `users` WHERE `username`='$username' and `password`= '$password'";
         
         $result= mysqli_query($conn, $sql)
@@ -39,6 +46,7 @@ if (isset($_POST)& !empty($_POST)){
 
         $row= mysqli_fetch_array($result);
         if($row['username'] == $username && $row['password'] == $password){
+
            echo "<div style='text-align:center'><h4>Login success full! Welcome " .  $row['username']. "</h4></div>";
            readfile("Sheet1.php");                    
        } else {
