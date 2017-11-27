@@ -1,6 +1,7 @@
 <?php
 
         include 'General.php';
+        echo showHeader();
 ?>
 
 
