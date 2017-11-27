@@ -1,43 +1,8 @@
-
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>PresentationDec</title>
-          
-        <link rel = "stylesheet" type = "text/css" href="StyleSheet.css">
-        
-        <style>
-          body  {
-                    background-image: url(Naamloos5.jpg);
-                    display:block;
-                    width: auto;
-                    height: auto;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-          }  
-            
-        </style>
-        
-        
-      
-          
-        
-        
-    </head>
-    <body>
-       
-        <header> Fabric forms  
-            <br>  
-        <a class= "subtxt"> Quilts with love</a> </header>        
-
-        
-    </body>
-</html>
-
-
 <?php
 
-$hostname = 'localhost';       
+session_start();
+
+    $hostname = 'localhost';       
     $databasenaam = 'prsentdec';
     $username = 'root';
     $password = '';
@@ -49,3 +14,44 @@ $hostname = 'localhost';
             die("DB failed to connect" . mysqli_error($conn));
 
         }
+?>
+        
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>PresentationDec</title>
+          
+        <link rel = "stylesheet" type = "text/css" href="StyleSheet.css">
+        <script>
+                function login(){
+                    document.location="Login.php";
+                }
+        
+     
+        </script>
+               
+    </head>
+    <body>
+       
+        <header> Fabric forms ff  
+            <br>  
+        <a class= "subtxt"> Quilts with love</a> </header>        
+
+        <div id = "form">
+            <form method="POST" > 
+<!--                action="login.php">-->
+        <ul>
+                    <li><a class="active" href="#home">Home</a></li>
+                    <li><a href="#nextpage">Next page</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li style="float:right"><a href="#logout">Logout</a></li>
+                    <li style="float:right"><a href="#regiter">Registert</a></li>
+                    <li style="float:right"><a onclick="login()"  id="login" href="#login" >Login</a></li>
+        </ul>
+            
+            
+            
+            </form>   
+         </div>
+
+
