@@ -1,26 +1,7 @@
 
 <?php
     include 'General.php';
-    include 'Sheet1.php';
+     echo showHeader();
 //    include 'Login.php';
 ?>
 
-
-<html>
-    <head>
-        
-      <link rel = "stylesheet" type = "text/css" href="StyleSheet.css">  
-                
-    </head>
-    <body>
-      
-        
-        
-        <?php
-        
-        
-        
-        
-        ?>
-    </body>
-</html>

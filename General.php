@@ -1,43 +1,34 @@
-
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>PresentationDec</title>
-          
-        <link rel = "stylesheet" type = "text/css" href="StyleSheet.css">
-        
-        <style>
-          body  {
-                    background-image: url(Naamloos5.jpg);
-                    display:block;
-                    width: auto;
-                    height: auto;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-          }  
-            
-        </style>
-        
-        
-      
-          
-        
-        
-    </head>
-    <body>
-       
-        <header> Fabric forms  
-            <br>  
-        <a class= "subtxt"> Quilts with love</a> </header>        
-
-        
-    </body>
-</html>
-
-
 <?php
 
-$hostname = 'localhost';       
+function showHeader(){
+        $returnString = <<<HEADSTRING
+        <html>
+            <head>
+                <link rel = "stylesheet" type = "text/css" href = "StyleSheet.css">
+                <script src="_appsojs.js"></script>
+            </head>
+        <body>
+        
+            <header> Fabric forms
+                <br>  
+            <a class= "subtxt"> Quilts with love</a> </header>   
+        
+        <a href=logout.php >log out</a>
+
+HEADSTRING;
+    return $returnString;
+}
+function showFooter(){
+    $returnString = "\t</body>\n";
+    $returnString .= "</html>";
+    return $returnString;
+}
+
+
+
+session_start();
+
+    $hostname = 'localhost';       
     $databasenaam = 'prsentdec';
     $username = 'root';
     $password = '';
@@ -49,3 +40,45 @@ $hostname = 'localhost';
             die("DB failed to connect" . mysqli_error($conn));
 
         }
+        
+          
+?>
+        
+
+    
+<!--        <meta charset="UTF-8">
+        <title>PresentationDec</title>
+          
+        <link rel = "stylesheet" type = "text/css" href="StyleSheet.css">-->
+        <script>
+                function login(){
+                    document.location="Login.php";
+                }
+        
+     
+        </script>
+               
+    
+       
+<!--        <header> Fabric forms  
+            <br>  
+        <a class= "subtxt"> Quilts with love</a> </header>        -->
+
+        <div id = "form">
+            <form method="POST" > 
+<!--                action="login.php">-->
+        <ul>
+                    <li><a class="active" href="#home">Home</a></li>
+                    <li><a href="#nextpage">Next page</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li style="float:right"><a href="#logout">Logout</a></li>
+                    <li style="float:right"><a href="#regiter">Registert</a></li>
+                    <li style="float:right"><a onclick="login()"  id="login" href="#login" >Login</a></li>
+        </ul>
+            
+            
+            
+            </form>   
+         </div>
+
+

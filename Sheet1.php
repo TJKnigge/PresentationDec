@@ -1,35 +1,16 @@
-<html>
-    <head>
+
+<?php
+
+        include 'General.php';
+        echo showHeader();
         
-        <link rel = "stylesheet" type = "text/css" href="StyleSheet.css">
+?>
          
-        <script>
-//                function login(){
-//                    document.location="Login.php";
-                   
-  
-                        
-        </script>
         
-   
-    </head>
-    <body>
-       
-        <div id = "form">
-            <form method="POST" > 
-<!--                action="login.php">-->
-        <ul>
-                    <li><a class="active" href="#home">Home</a></li>
-                    <li><a href="#nextpage">Next page</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li style="float:right"><a href="#logout">Logout</a></li>
-                    <li style="float:right"><a href="#regiter">Registert</a></li>
-                    <li style="float:right"><a id="Login" onclick="Login()" href=#Login" >Login</a></li>
-                </ul>
-          
-            </form>   
-        </div>
+
         
+        <form>
+            <div  id="background">        
             <div class="background" id="background">
                 <div class="transbox" id="transbox">
                     <p> Toen ik nog kleding voor de kinderen maakte, zag ik vaak prachtige quilts in de patroonbladen staan.<br><br>
@@ -43,18 +24,11 @@
                         Naast het maken van ‘gewone ’quilts wil ik voor mensen die kleding hebben liggen waar zij 
                         herinneringen mee hebben of een speciale band mee voelen graag iets betekenen door de 
                         gebruikte kleding te verwerken in een kussen of quilt.
-                    </p>
-                                    
+                    </p>      
+                     
                 </div>
             </div>
-        
-    </body>
-</html>
+            </form>
 
- 
-
- 
-
-<?php
 
 
