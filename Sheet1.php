@@ -4,43 +4,17 @@
         <link rel = "stylesheet" type = "text/css" href="StyleSheet.css">
          
         <script>
-                function login(){
-                    document.location="Login.php";
-                    
-                }
-        
-        
-                var modal = document.getElementById('myModal');
-
-                var btn = document.getElementById("login");
-
-                var span = document.getElementsByClassName("close")[0];
-
-                btn.onclick = function() {
-                    modal.style.display = "block";
-                }
-
-                span.onclick = function() {
-                    modal.style.display = "none";
-                }
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-        
+//                function login(){
+//                    document.location="Login.php";
+                   
+  
+                        
         </script>
         
    
     </head>
     <body>
        
-        <button id="login">Open Modal</button>
-
-    <div id="myModal" class="modal"></div>
-             
         <div id = "form">
             <form method="POST" > 
 <!--                action="login.php">-->
@@ -50,9 +24,9 @@ window.onclick = function(event) {
                     <li><a href="#contact">Contact</a></li>
                     <li style="float:right"><a href="#logout">Logout</a></li>
                     <li style="float:right"><a href="#regiter">Registert</a></li>
-                    <li style="float:right"><a id="login" onclick="login()" href="#login" >Login</a></li>
+                    <li style="float:right"><a id="Login" onclick="Login()" href=#Login" >Login</a></li>
                 </ul>
-            
+          
             </form>   
         </div>
         
