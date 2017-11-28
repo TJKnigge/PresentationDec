@@ -6,9 +6,127 @@
         
 ?>
          
-        
+<!--         <html>
+<head>
+<style>
+div {background-color: green;}
+div a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    display:inline-block;
+}
+ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+ul li {display: inline-block;}
+ul li:hover {background: #555;}
+ul li:hover ul {display: block;}
+ul li ul {
+  position: absolute;
+  width: 200px;
+  display: none;
+}
+ul li ul li { 
+  background: #555; 
+  display: block; 
+}
+ul li ul li a {display:block !important;} 
+ul li ul li:hover {background: #666;}
+</style>
+</head>
+<body>
 
-        
+<div>
+  
+  <ul>
+    <li>
+      <a href="#">Dropdown Link</a>
+      <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+</body>
+</html>-->
+
+<html>
+<head>
+<style>
+.dropbtn {
+    background-image: url("shoonmaak.jpg");
+    width: 100px;
+    height: 140px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 1.0; 
+    filter: alpha(opacity=50);
+    margin-left: 50px;
+    margin-top: 100px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+</style>
+</head>
+<body>
+
+<div class="dropdown">
+  <button class="dropbtn">Quil voorbeeld</button>
+  <div class="dropdown-content">
+      <a href="GedenkKussen.JPG">gedenk kussen</a>
+      <a href="KinderQuilts.jpg">Kinder Quilts</a>
+      <a href="QuiltInOntweikkeling.JPG">Quilt In Ontweikkeling</a>
+  </div>
+</div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+       
         <form>
             <div  id="background">        
             <div class="background" id="background">
