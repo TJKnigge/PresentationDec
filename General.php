@@ -6,19 +6,20 @@ function showHeader(){
         <html>
             <head>
                 <link rel = "stylesheet" type = "text/css" href = "StyleSheet.css">
-                <script src="_appsojs.js"></script>
+                <script src="_appsojs.js">
+                  
+                function logout(){
+                    document.location="Logout.php";
+   
+                </script>
             </head>
         <body>
-        
-            <header> Fabric forms
-                <br>  
-            <a class= "subtxt"> Quilts with love</a> </header>   
-        
-        <a href=logout.php >log out</a>
+       
+
 
 HEADSTRING;
-    return $returnString;
-}
+     return $returnString;
+    }
 function showFooter(){
     $returnString = "\t</body>\n";
     $returnString .= "</html>";
@@ -61,19 +62,20 @@ session_start();
                
     
        
-<!--        <header> Fabric forms  
+        <header> Fabric forms  
             <br>  
-        <a class= "subtxt"> Quilts with love</a> </header>        -->
+        <a class= "subtxt"> Quilts with love</a> </header>        
 
         <div id = "form">
+            
             <form method="POST" > 
 <!--                action="login.php">-->
         <ul>
                     <li><a class="active" href="#home">Home</a></li>
                     <li><a href="#nextpage">Next page</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li style="float:right"><a href="#logout">Logout</a></li>
-                    <li style="float:right"><a href="#regiter">Registert</a></li>
+                    <li style="float:right"><a id="logout" href="#logout">Logout</a></li>
+                    <li style="float:right"><a href="Register.php">Regiter</a></li>
                     <li style="float:right"><a onclick="login()"  id="login" href="#login" >Login</a></li>
         </ul>
             

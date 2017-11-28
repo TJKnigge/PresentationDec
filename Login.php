@@ -48,7 +48,9 @@ if (isset($_POST)& !empty($_POST)){
         if($row['username'] == $username && $row['password'] == $password){
 
            echo "<div style='text-align:center'><h4>Login success full! Welcome " .  $row['username']. "</h4></div>";
-           readfile("Sheet1.php");                    
+           readfile("Sheet1.php");
+           header('Location: Sheet1.php');
+           
        } else {
             echo "<div style='text-align:center'><h4>Sorry, you are not in our database " . $username . "!</h4></div>";
 
