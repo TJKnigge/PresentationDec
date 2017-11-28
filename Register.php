@@ -10,7 +10,7 @@
             <form> 
 <!--                action="login_session.php">-->
         
-                Username:<br><input type="text" id="nwuser" name="nwuser" placeholder="nieuwe gebruiker" required><br>
+                Username:<br><input type="nwuser" id="nwuser" name="nwuser" placeholder="nieuwe gebruiker" required><br>
                 Password:<br><input type="password" id="nwpassw" name="nwpassw" placeholder="wachtwoord" required><br>
                 Achternaam:<br><input type="surnm" id="surnm" name="surnm" placeholder="achternaam" required><br>
                 Straatnaam:<br><input type="street" id="street" name="street" placeholder="straatnaam" required><br>
@@ -35,7 +35,7 @@
      
      if (isset($_REQUEST)& !empty($_REQUEST)){
          
-         $result= $_REQUEST['nwuser'];
+         $username= $_REQUEST['nwuser'];
          $pasword= $_REQUEST['nwpassw'];
          $achternaam= $_REQUEST['surnm'];
          $straat= $_REQUEST['street'];
@@ -44,16 +44,15 @@
          $adres= $_REQUEST['adress'];
          $email= $_REQUEST['email'];
          
+         
          $sql= "INSERT INTO `users` (`username`, `password`, `achternaam`, `straat`, `huisnr`, `postcode`, `adres`, `email`) VALUES ('$username', '$pasword', '$achternaam', '$straat', '$huisnr', '$postcode', '$adres', '$email')";
-         
-         echo $sql;
-         
+                         
          $result= mysqli_query($conn, $sql)
                     or die("Failed to connect to DB" . mysqli_error());
          
          if($result){
              
-             echo "Bedankt voor het invullen van uw gegevens " . $result;
+             echo "Bedankt voor het invullen van uw gegevens " . $username;
          }else{
              echo "Sorry, probeer het nog eens";
          }
