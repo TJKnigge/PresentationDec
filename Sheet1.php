@@ -109,11 +109,12 @@ ul li ul li:hover {background: #666;}
 <div class="dropdown">
   <button class="dropbtn">Quil voorbeeld</button>
   <div class="dropdown-content">
-      <a href="GedenkKussen.JPG">gedenk kussen</a>
+      <a href="GedenkKussen.JPG">Gedenk Kussen</a>
       <a href="KinderQuilts.jpg">Kinder Quilts</a>
       <a href="QuiltInOntweikkeling.JPG">Quilt In Ontweikkeling</a>
   </div>
 </div>
+g
 
 
 </body>
