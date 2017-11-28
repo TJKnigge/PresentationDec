@@ -57,73 +57,16 @@ ul li ul li:hover {background: #666;}
 </body>
 </html>-->
 
-<html>
-<head>
-<style>
-.dropbtn {
-    background-image: url("shoonmaak.jpg");
-    width: 100px;
-    height: 140px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    opacity: 1.0; 
-    filter: alpha(opacity=50);
-    margin-left: 50px;
-    margin-top: 100px;
-}
 
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown:hover .dropbtn {
-    background-color: #3e8e41;
-}
-</style>
-</head>
-<body>
 
 <div class="dropdown">
-  <button class="dropbtn">Quil voorbeeld</button>
+  <button class="dropbtn">Quilt voorbeelden</button>
   <div class="dropdown-content">
       <a href="GedenkKussen.JPG">Gedenk Kussen</a>
       <a href="KinderQuilts.jpg">Kinder Quilts</a>
       <a href="QuiltInOntweikkeling.JPG">Quilt In Ontweikkeling</a>
   </div>
 </div>
-g
-
-
-</body>
-</html>
-
-
-
-
-
 
 
 
