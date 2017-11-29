@@ -60,8 +60,8 @@
 
             div.transbox {
                         margin-top: 10px;
-                        margin-left: 400px;
-                        margin-right: 400px;
+                        margin-left: 350px;
+                        margin-right: 350px;
                         margin-bottom: 10px;
                         background-color: #ffffff;
                         border: 1px solid black;
@@ -74,20 +74,20 @@
                         line-height: 1.2;
                         font-weight: bold;
                         color: black;
-                        padding-left: 60px;
-                        padding-right: 60px;
+                        padding-left: 10px;
+                        padding-right: 10px;
              }
              
             .dropbtn {
                     background-image: url("shoonmaak.jpg");
-                    width: 120px;
-                    height: 160px;
+                    width: 200px;
+                    height: 280px;
                     background-repeat: no-repeat;
                     background-size: contain;
                     opacity: 1.0; 
                     filter: alpha(opacity=50);
                     margin-left: 50px;
-                    margin-top: 100px;
+                    margin-top: 200px;
                     color: white;
                     padding: 7px;
                     font-size: 16px
