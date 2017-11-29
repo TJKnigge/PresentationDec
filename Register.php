@@ -44,7 +44,7 @@
          $adres= $_REQUEST['adress'];
          $email= $_REQUEST['email'];
          
-         
+          
          $sql= "INSERT INTO `users` (`username`, `password`, `achternaam`, `straat`, `huisnr`, `postcode`, `adres`, `email`) VALUES ('$username', '$pasword', '$achternaam', '$straat', '$huisnr', '$postcode', '$adres', '$email')";
                          
          $result= mysqli_query($conn, $sql)
