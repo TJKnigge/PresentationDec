@@ -71,12 +71,12 @@ session_start();
             <form method="POST" > 
 <!--                action="login.php">-->
         <ul>
-                    <li><a class="active" href="#home">Home</a></li>
-                    <li><a href="#nextpage">Next page</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li style="float:right"><a id="logout" href="#logout">Logout</a></li>
-                    <li style="float:right"><a href="Register.php">Regiter</a></li>
-                    <li style="float:right"><a onclick="login()"  id="login" href="#login" >Login</a></li>
+            <li><a class="active" href="index.php">Home</a></li>
+            <li><a href="Sheet2.php">Next page</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li style="float:right"><a id="logout" href="Logout.php">Logout</a></li>
+            <li style="float:right"><a href="Register.php">Regiter</a></li>
+            <li style="float:right"><a onclick="login()"  id="login" href="#login" >Login</a></li>
         </ul>
             
             
