@@ -18,8 +18,8 @@
         
 ?>
    
-
-        <h3>Aplicatie patronen</h3>
+<form>
+    <a class= "txt"><h3>Aplicatie patronen</h3></a>
         <label class="container">Keuze 1
             <input type="checkbox" id="one" name="one">
             <span class="checkmark"></span>
@@ -37,5 +37,15 @@
             <span class="checkmark"></span>
         </label>
 
-
-
+    
+        <div>
+            <a class= "top-txt"><h3>Formaat Quilt</h3></a>
+            <select name="cnt" size="1" maxlength="20"  size="15" class="select">
+                 <option value=" "> </option>
+                 <option value="the Netherlands">Kussen</option>
+                 <option value="Germany">mini</option>
+                 <option value="Belgium">normaal</option>
+                 
+            </select>
+        </div>    
+</form>

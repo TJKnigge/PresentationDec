@@ -127,9 +127,10 @@
             .container {
                 display: block;
                 position: relative;
-                padding-left: 35px;
+                padding-left:50px;
                 margin-bottom: 12px;
-                margin-left: 50px;
+                margin-left: 75px;
+                white-space: nowrap;
                 cursor: pointer;
                 font-size: 22px;
                 -webkit-user-select: none;
@@ -181,4 +182,21 @@
                 -webkit-transform: rotate(45deg);
                 -ms-transform: rotate(45deg);
                 transform: rotate(45deg);
+            }
+            
+            .txt{
+                text-indent: 75px;
+            }
+            
+            select {
+                min-width:265px;
+                min-height: 45px;
+                border-width: 3px;
+                border-color: rgba(50, 50, 50, 0.14);
+                margin-left: 600px;
+            }
+ 
+            .top-txt{
+                background-color:#cc00cc;
+                text-indent: 600px;
             }
