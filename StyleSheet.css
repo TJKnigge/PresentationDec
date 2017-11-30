@@ -125,9 +125,10 @@
             }
             
             .container {
-                display: block;
-                position: relative;
+                display: inline;
+                position: fixed;
                 padding-left:50px;
+                margin-top: 200px;
                 margin-bottom: 12px;
                 margin-left: 75px;
                 white-space: nowrap;
@@ -136,7 +137,7 @@
                 -webkit-user-select: none;
                 -moz-user-select: none;
                 -ms-user-select: none;
-                user-select: none;
+                /*user-select: none;*/
             }
 
             .container input {
@@ -186,6 +187,7 @@
             
             .txt{
                 text-indent: 75px;
+                padding-top: 200px;
             }
             
             select {
