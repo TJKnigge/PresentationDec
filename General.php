@@ -5,12 +5,14 @@ function showHeader(){
         $returnString = <<<HEADSTRING
         <html>
             <head>
+                
                 <link rel = "stylesheet" type = "text/css" href = "StyleSheet.css">
-                <script src="_appsojs.js">
-                  
+                
+                <script>
                 function logout(){
                     document.location="Logout.php";
    
+                }
                 </script>
             </head>
         <body>
@@ -35,7 +37,11 @@ session_start();
     $username = 'root';
     $password = '';
         
-        
+//     $hostname = 'localhost';       
+//    $databasenaam = 'phpzwollegen2';
+//    $username = 'phpzwollegen1';
+//    $password = 'itphtoren';
+    
         $conn = mysqli_connect($hostname, $username, $password, $databasenaam);
                 
         if (!$conn){
@@ -84,4 +90,8 @@ session_start();
             </form>   
          </div>
 
+<?php
+
+        echo showFooter();
+?>
 
