@@ -7,3 +7,7 @@
      header('Location: Sheet1.php');
 ?>
 
+<?php
+
+        echo showFooter();
+?>
