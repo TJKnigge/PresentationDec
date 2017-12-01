@@ -124,20 +124,19 @@
                 background-color: #3e8e41;
             }
             
+            
             .container {
                 display: inline;
-                position: fixed;
+                position: relative;
                 padding-left:50px;
-                margin-top: 200px;
                 margin-bottom: 12px;
                 margin-left: 75px;
                 white-space: nowrap;
                 cursor: pointer;
                 font-size: 22px;
-                -webkit-user-select: none;
+/*                -webkit-user-select: none;
                 -moz-user-select: none;
-                -ms-user-select: none;
-                /*user-select: none;*/
+                -ms-user-select: none;*/
             }
 
             .container input {
@@ -184,21 +183,27 @@
                 -ms-transform: rotate(45deg);
                 transform: rotate(45deg);
             }
-            
+                        
             .txt{
                 text-indent: 75px;
-                padding-top: 200px;
             }
             
+            .selectbtn{
+                     
+                  padding-left: 500px;
+                  padding-top: 10px;
+            }
+
             select {
+                background-color: #ff9933;
                 min-width:265px;
                 min-height: 45px;
                 border-width: 3px;
                 border-color: rgba(50, 50, 50, 0.14);
-                margin-left: 600px;
+                /*margin-left: 600px;*/
             }
  
             .top-txt{
-                background-color:#cc00cc;
-                text-indent: 600px;
+                text-indent: 75px;
+                
             }

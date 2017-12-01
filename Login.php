@@ -40,7 +40,7 @@ if (isset($_POST)& !empty($_POST)){
         
         
         
-        $sql="select * FROM `users` WHERE `username`='$username' and `password`= '$password'"; //oorsproklijk
+        $sql="select * FROM `tjk_users` WHERE `username`='$username' and `password`= '$password'"; //oorsproklijk
                 
 //        $result= mysqli_query($conn, $sql);      
 //               or die("Failed to connect to DB" . mysqli_error());

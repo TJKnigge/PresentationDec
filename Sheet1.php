@@ -40,5 +40,9 @@
             </div>
             </form>
 
+<?php
+
+        echo showFooter();
+?>
 
 

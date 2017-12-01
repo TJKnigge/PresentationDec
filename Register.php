@@ -45,7 +45,7 @@
          $email= $_REQUEST['email'];
          
           
-         $sql= "INSERT INTO `users` (`username`, `password`, `achternaam`, `straat`, `huisnr`, `postcode`, `adres`, `email`) VALUES ('$username', '$pasword', '$achternaam', '$straat', '$huisnr', '$postcode', '$adres', '$email')";
+         $sql= "INSERT INTO `tjk_users` (`username`, `password`, `achternaam`, `straat`, `huisnr`, `postcode`, `adres`, `email`) VALUES ('$username', '$pasword', '$achternaam', '$straat', '$huisnr', '$postcode', '$adres', '$email')";
                          
          $result= mysqli_query($conn, $sql)
                     or die("Failed to connect to DB" . mysqli_error());
@@ -57,4 +57,9 @@
              echo "Sorry, probeer het nog eens";
          }
      }
+?>
 
+<?php
+
+        echo showFooter();
+?>
