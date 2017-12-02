@@ -54,10 +54,7 @@ session_start();
         
 
     
-<!--        <meta charset="UTF-8">
-        <title>PresentationDec</title>
-          
-        <link rel = "stylesheet" type = "text/css" href="StyleSheet.css">-->
+
         <script>
                 function login(){
                     document.location="Login.php";
