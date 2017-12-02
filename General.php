@@ -24,17 +24,7 @@ function showHeader(){
 HEADSTRING;
      return $returnString;
     }
-    
- function checkuser(){   
-        
-    if ($_SESSION['loggedin'] != true) {
-       echo 'not logged in';
-       header("Location: login.php");
-       
-   }
- }
- $user=$_SESSION['username'];
- 
+     
 function showFooter(){
     $returnString = "\t</body>\n";
     $returnString .= "</html>";
@@ -90,6 +80,7 @@ function showFooter(){
             <li><a class="active" href="index.php">Home</a></li>
             <li><a href="Sheet2.php">Next page</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li style="float:right"><a id="delete" href="mijngegevens.php" >Verwijder Pofiel</a></li>
             <li style="float:right"><a id="logout" href="Logout.php">Logout</a></li>
             <li style="float:right"><a href="Register.php">Regiter</a></li>
             <li style="float:right"><a onclick="login()"  id="login" href="#login" >Login</a></li>
