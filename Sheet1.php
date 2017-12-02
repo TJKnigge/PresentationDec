@@ -10,9 +10,9 @@
 <div class="dropdown">
   <button class="dropbtn">Quilt voorbeelden</button>
   <div class="dropdown-content">
-      <a href="GedenkKussen.JPG">Gedenk Kussen</a>
-      <a href="KinderQuilts.jpg">Kinder Quilts</a>
-      <a href="QuiltInOntweikkeling.JPG">Quilt In Ontweikkeling</a>
+      <a href="img/GedenkKussen.JPG">Gedenk Kussen</a>
+      <a href="img/KinderQuilts.jpg">Kinder Quilts</a>
+      <a href="img/QuiltInOntweikkeling.JPG">Quilt In Ontweikkeling</a>
   </div>
 </div>
 
