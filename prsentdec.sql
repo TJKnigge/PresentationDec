@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 28 nov 2017 om 13:26
--- Serverversie: 10.1.28-MariaDB
--- PHP-versie: 7.1.10
+-- Generation Time: Dec 02, 2017 at 11:57 AM
+-- Server version: 10.1.28-MariaDB
+-- PHP Version: 7.1.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,10 +25,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Tabelstructuur voor tabel `bestelling`
+-- Table structure for table `tjk_bestelling`
 --
 
-CREATE TABLE `bestelling` (
+CREATE TABLE `tjk_bestelling` (
   `id` int(11) NOT NULL,
   `users_id` int(11) NOT NULL,
   `patronen` varchar(255) NOT NULL,
@@ -39,10 +39,10 @@ CREATE TABLE `bestelling` (
 -- --------------------------------------------------------
 
 --
--- Tabelstructuur voor tabel `users`
+-- Table structure for table `tjk_users`
 --
 
-CREATE TABLE `users` (
+CREATE TABLE `tjk_users` (
   `id` int(11) NOT NULL,
   `username` varchar(255) NOT NULL,
   `achternaam` varchar(255) NOT NULL,
@@ -55,45 +55,52 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Gegevens worden geëxporteerd voor tabel `users`
+-- Dumping data for table `tjk_users`
 --
 
-INSERT INTO `users` (`id`, `username`, `achternaam`, `password`, `email`, `straat`, `huisnr`, `postcode`, `adres`) VALUES
+INSERT INTO `tjk_users` (`id`, `username`, `achternaam`, `password`, `email`, `straat`, `huisnr`, `postcode`, `adres`) VALUES
 (1, 'test', '', 'testpw', '', '', 0, '', ''),
 (3, 'Jan', 'Jansen', 'abc', 'jan@jansen.vv', 'Steenstraat', 4, '1234 GZ', 'Gooi'),
-(5, 'root', 'Groot', 'cde', 'peter@groot.nn', 'Landweg', 2, '1234 GG', 'Gooi');
+(5, 'root', 'Groot', 'cde', 'peter@groot.nn', 'Landweg', 2, '1234 GG', 'Gooi'),
+(6, 'root', 'Jansen', 'abc', 'jan@jansen.nn', 'Steenstraat', 7, '1234 GH', 'Hoogland'),
+(7, 'root', 'Kraak', 'def', 'piet@kraak.mm', 'Groenstraat', 4, '6789 AS', 'Heerde'),
+(8, 'root', 'Kraak', 'def', 'piet@kraak.mm', 'Groenstraat', 4, '6789 AS', 'Heerde'),
+(9, 'root', 'Leer', 'qwer', 'geert@leer.cc', 'Waterweg', 1, '1234 RE', 'Laagwater'),
+(10, 'Inge', 'Huisjes', 'tyui', 'inge@huisjes.kk', 'teerstraat', 6, '8765 JK', 'Leerdam'),
+(11, 'Tea', 'Dijkstra', 'ghjk', 'tea@dijkstra', 'Grasweg', 4, '6544 JI', 'Aadorp'),
+(12, 'Geertje', 'Fransen', 'werd', 'geertje@fransen.jj', 'Tulplaan', 8, '8567 VB', 'Beerse');
 
 --
--- Indexen voor geëxporteerde tabellen
+-- Indexes for dumped tables
 --
 
 --
--- Indexen voor tabel `bestelling`
+-- Indexes for table `tjk_bestelling`
 --
-ALTER TABLE `bestelling`
+ALTER TABLE `tjk_bestelling`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexen voor tabel `users`
+-- Indexes for table `tjk_users`
 --
-ALTER TABLE `users`
+ALTER TABLE `tjk_users`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT voor geëxporteerde tabellen
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT voor een tabel `bestelling`
+-- AUTO_INCREMENT for table `tjk_bestelling`
 --
-ALTER TABLE `bestelling`
+ALTER TABLE `tjk_bestelling`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT voor een tabel `users`
+-- AUTO_INCREMENT for table `tjk_users`
 --
-ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+ALTER TABLE `tjk_users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

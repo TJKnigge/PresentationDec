@@ -1,6 +1,8 @@
 
 <?php
 
+session_start();
+
 function showHeader(){
         $returnString = <<<HEADSTRING
         <html>
@@ -22,6 +24,17 @@ function showHeader(){
 HEADSTRING;
      return $returnString;
     }
+    
+ function checkuser(){   
+        
+    if ($_SESSION['loggedin'] != true) {
+       echo 'not logged in';
+       header("Location: login.php");
+       
+   }
+ }
+ $user=$_SESSION['username'];
+ 
 function showFooter(){
     $returnString = "\t</body>\n";
     $returnString .= "</html>";
@@ -30,7 +43,7 @@ function showFooter(){
 
 
 
-session_start();
+//session_start();
 
     $hostname = 'localhost';       
     $databasenaam = 'prsentdec';
@@ -54,10 +67,7 @@ session_start();
         
 
     
-<!--        <meta charset="UTF-8">
-        <title>PresentationDec</title>
-          
-        <link rel = "stylesheet" type = "text/css" href="StyleSheet.css">-->
+
         <script>
                 function login(){
                     document.location="Login.php";

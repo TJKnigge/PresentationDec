@@ -40,7 +40,7 @@ if (isset($_POST)& !empty($_POST)){
         
         
         
-        $sql="select * FROM `tjk_users` WHERE `username`='$username' and `password`= '$password'"; //oorsproklijk
+        $sql="select * FROM `tjk_users` WHERE `username`='$username' and `password`= '$password'"; 
                 
         $result= mysqli_query($conn, $sql);
         $count= mysqli_num_rows($result);
@@ -49,6 +49,7 @@ if (isset($_POST)& !empty($_POST)){
            
             $_SESSION['loggedin'] = true;
             $_SESSION['username'] = $username;
+         
             }
         
         if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
@@ -61,7 +62,7 @@ if (isset($_POST)& !empty($_POST)){
             echo "<div style='text-align:center'><h4>Please register as a new user</h4></div>";
            
        }
-       return $username;
+      
 }
 ?>
 

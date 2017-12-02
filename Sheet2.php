@@ -3,20 +3,28 @@ include 'General.php';
 echo showHeader();
 
 
-
-
-if ($_SESSION['loggedin'] != true) {
-    echo 'not logged in';
-    header("Location: login.php");
     
-    
-}
-    echo $username;
-
+    $user=$_SESSION['username'];
+ 
+    echo $user
 ?>
 
+
+        <script>
+               function btclient() {
+                 var x = document.getElementById("client");
+                    x = location.href = "mijngegevens.php";
+                    
+               }
+     
+        </script>
+
+
+
+
 <form method="POST">
-         <div class="selectbtn">
+      <div class="row">  
+    <div class="selectbtn">
             <a class= "top-txt"><h3>Formaat Quilt</h3></a>
             <select name="cnt" size="1" maxlength="20"  size="15" class="select">
                  <option value=" "> </option>
@@ -25,18 +33,18 @@ if ($_SESSION['loggedin'] != true) {
                  <option value="Belgium">normaal</option>
                  
             </select>
-        </div>   
+        </div> 
+      </div>      
 
-
-
+    <div class="row">
         <div class="radio_div">
             <a class= "txt"><h3>Soort Quilt</h3></a>
                 <input type="radio" name="Herdenkingsquilt" id="Herdenkingsquilt" value="Herdenkingsquilt"> Herdenkingsquilt<br>
                 <input type="radio" name="Standaard quilt" id="Standaard" quilt value="Standaard quilt"> Standaard quilt<br>
         </div>       
-
-
-
+    </div>
+    
+    <div class="row">
         <div class="container_div">
             <a class= "txt"><h3>Aplicatie patronen</h3></a>
                 <label class="container">Keuze 1
@@ -60,12 +68,14 @@ if ($_SESSION['loggedin'] != true) {
                 </label>
             <br><br>
         </div>
-    
-         <button class="primary" id="submit" value="submit" > Bevestig Selectie </button>
+    </div>
+        
+         <button class="primary" id="submit" value="submit" > Bevestig Keuze </button>
+         
+         <button type="button" onclick="btclient()" id="client">Toon mijn gegevens</button>
+         
+         
 </form>
-
-
-
 
 <!--<form>
     <div class="row">
@@ -107,12 +117,31 @@ if ($_SESSION['loggedin'] != true) {
             </div>   
         </div>   
     </div>
+
+
+
 </form>-->
 
 
 <?php
+
+//    $query= "SELECT * FROM `tjk_users` WHERE `username` = '$user' ";
+//
+//        $result = $conn->query($query);
+//
+//        if ($result->num_rows > 0) {
+//            echo "<table style='margin-top: 100px; margin-left: 600px'><tr><th>ID</th><th>Name</th><th>Achternaam</th>"
+//            . "<th>Straat</th><th>Huisnr.</th><th>Postcode</th><th>Adres</th><th>email</th></tr>";
+//           
+//            while($row = $result->fetch_assoc()) {
+//                echo "<tr><td>".$row["id"]."</td><td>".$row["username"]."</td><td> ".$row["achternaam"]."</td><td> ".$row["straat"]."</td>"
+//                        . "<td> ".$row["huisnr"]."</td><td> ".$row["postcode"]."</td><td> ".$row["adres"]."</td><td> ".$row["email"]."</td></tr>";
+//            }
+//            echo "</table>";
+//        } 
+
 echo showFooter();
 ?>
-
-<!--https://www.w3schools.com/css/tryit.asp?filename=trycss_zindex
+<!--
+https://www.w3schools.com/css/tryit.asp?filename=trycss_zindex
 https://www.w3schools.com/howto/howto_css_modal_images.asp-->
