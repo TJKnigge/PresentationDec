@@ -13,6 +13,7 @@ if ($_SESSION['loggedin'] != true) {
 }
     echo $username;
 
+    
 ?>
 
 <form method="POST">
