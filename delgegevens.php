@@ -10,8 +10,6 @@ if ($_SESSION['loggedin'] != true) {
     
     $user=$_SESSION['username'];
     
-    
-    
 //    if (isset($_REQUEST['username']) and ( $_REQUEST['username'] == '$user')) {     
 //
 //    } elseif (isset($_REQUEST['subject'])) {
@@ -25,6 +23,5 @@ if ($_SESSION['loggedin'] != true) {
         header("Location: logout.php");
 
 //    }
-
-   
+  
 ?>

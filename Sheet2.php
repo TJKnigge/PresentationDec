@@ -10,21 +10,16 @@ if ($_SESSION['loggedin'] != true) {
     
     $user=$_SESSION['username'];
  
-    echo $user
 ?>
-
 
         <script>
                function btclient() {
                  var x = document.getElementById("client");
-                    x = location.href = "mijngegevens.php";
+                     x = location.href = "mijngegevens.php";
                     
                }
      
         </script>
-
-
-
 
 <form method="POST">
       <div class="row">  
@@ -32,9 +27,9 @@ if ($_SESSION['loggedin'] != true) {
             <a class= "top-txt"><h3>Formaat Quilt</h3></a>
             <select name="cnt" size="1" maxlength="20"  size="15" class="select">
                  <option value=" "> </option>
-                 <option value="the Netherlands">Kussen</option>
-                 <option value="Germany">mini</option>
-                 <option value="Belgium">normaal</option>
+                 <option value="kussen">Kussen</option>
+                 <option value="mini">mini</option>
+                 <option value="normaal">normaal</option>
                  
             </select>
         </div> 
@@ -74,20 +69,14 @@ if ($_SESSION['loggedin'] != true) {
         </div>
     </div>
         
-         <button class="primary" id="submit" value="submit" > Bevestig Keuze </button>
+         <!--<button class="primary" id="submit" value="submit" > Bevestig Keuze </button>-->
          
-         <button type="button" onclick="btclient()" id="client">Toon mijn gegevens</button>
+         <button class="primary" type="button" onclick="btclient()" id="client">Toon mijn gegevens</button>
          
          
 </form>
-
-
-
 
 <?php
 
 echo showFooter();
 ?>
-<!--
-https://www.w3schools.com/css/tryit.asp?filename=trycss_zindex
-https://www.w3schools.com/howto/howto_css_modal_images.asp-->
