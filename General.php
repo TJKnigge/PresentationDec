@@ -18,9 +18,7 @@ function showHeader(){
                 </script>
             </head>
         <body>
-       
-
-
+ 
 HEADSTRING;
      return $returnString;
     }
@@ -30,10 +28,6 @@ function showFooter(){
     $returnString .= "</html>";
     return $returnString;
 }
-
-
-
-//session_start();
 
     $hostname = 'localhost';       
     $databasenaam = 'prsentdec';
@@ -51,13 +45,9 @@ function showFooter(){
             die("DB failed to connect" . mysqli_error($conn));
 
         }
-        
-          
+      
 ?>
-        
-
-    
-
+ 
         <script>
                 function login(){
                     document.location="Login.php";
@@ -70,9 +60,7 @@ function showFooter(){
                }
        
         </script>
-               
-    
-       
+      
         <header> Fabric forms  
             <br>  
         <a class= "subtxt"> Quilts with love</a> </header>        
@@ -90,9 +78,7 @@ function showFooter(){
             <li style="float:right"><a href="Register.php">Regiter</a></li>
             <li style="float:right"><a onclick="login()"  id="login" href="#login" >Login</a></li>
         </ul>
-            
-            
-            
+           
             </form>   
          </div>
 

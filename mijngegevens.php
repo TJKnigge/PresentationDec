@@ -11,7 +11,6 @@ if ($_SESSION['loggedin'] != true) {
     $user=$_SESSION['username'];
 ?>
 
-
 <head>
 
         <script>
@@ -22,17 +21,15 @@ if ($_SESSION['loggedin'] != true) {
 //            
 //            }        
 
-
         </script>
 
     </head>
-
+<!--
     <form>
      
     <button type="button" onclick="delbtn()" id="delbton">Verwijder mijn gegevens</button>
-    </form>
-
-   
+    </form>-->
+  
 <?php
     $query= "SELECT * FROM `tjk_users` WHERE `username` = '$user' ";
 
@@ -48,20 +45,11 @@ if ($_SESSION['loggedin'] != true) {
             }
             echo "</table>";
         } 
-        
-        
-        
-        
-        
+         
         function ltest(){
             
             echo "Het werk zo ook";
         }
-    
-    
-      
-        
-        
 
 echo showFooter();
 ?>
