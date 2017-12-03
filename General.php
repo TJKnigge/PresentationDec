@@ -63,7 +63,12 @@ function showFooter(){
                     document.location="Login.php";
                 }
         
-     
+                function btndelete() {
+                 var x = document.getElementById("delete");
+                     x = location.href = "delgegevens.php";
+                    alert("U staat op het punt uw gegevens te verwijderen!");
+               }
+       
         </script>
                
     
@@ -80,7 +85,7 @@ function showFooter(){
             <li><a class="active" href="index.php">Home</a></li>
             <li><a href="Sheet2.php">Next page</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li style="float:right"><a id="delete" href="mijngegevens.php" >Verwijder Pofiel</a></li>
+            <li style="float:right"><a onclick="btndelete()" id="delete"  >Verwijder Pofiel</a></li>
             <li style="float:right"><a id="logout" href="Logout.php">Logout</a></li>
             <li style="float:right"><a href="Register.php">Regiter</a></li>
             <li style="float:right"><a onclick="login()"  id="login" href="#login" >Login</a></li>
