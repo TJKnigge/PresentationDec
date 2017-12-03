@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 02, 2017 at 11:57 AM
+-- Generation Time: Dec 03, 2017 at 10:03 PM
 -- Server version: 10.1.28-MariaDB
 -- PHP Version: 7.1.10
 
@@ -66,9 +66,9 @@ INSERT INTO `tjk_users` (`id`, `username`, `achternaam`, `password`, `email`, `s
 (7, 'root', 'Kraak', 'def', 'piet@kraak.mm', 'Groenstraat', 4, '6789 AS', 'Heerde'),
 (8, 'root', 'Kraak', 'def', 'piet@kraak.mm', 'Groenstraat', 4, '6789 AS', 'Heerde'),
 (9, 'root', 'Leer', 'qwer', 'geert@leer.cc', 'Waterweg', 1, '1234 RE', 'Laagwater'),
-(10, 'Inge', 'Huisjes', 'tyui', 'inge@huisjes.kk', 'teerstraat', 6, '8765 JK', 'Leerdam'),
 (11, 'Tea', 'Dijkstra', 'ghjk', 'tea@dijkstra', 'Grasweg', 4, '6544 JI', 'Aadorp'),
-(12, 'Geertje', 'Fransen', 'werd', 'geertje@fransen.jj', 'Tulplaan', 8, '8567 VB', 'Beerse');
+(13, 'Greetje', 'Rijnders', 'werd', 'greetje@rijnders.gg', 'Waterkant', 3, '2345', 'Haalem'),
+(14, 'Gerda ', 'Albers', 'werd', 'gerd@albers.nn', 'Roos', 5, '6778', 'Houten');
 
 --
 -- Indexes for dumped tables
@@ -100,7 +100,7 @@ ALTER TABLE `tjk_bestelling`
 -- AUTO_INCREMENT for table `tjk_users`
 --
 ALTER TABLE `tjk_users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

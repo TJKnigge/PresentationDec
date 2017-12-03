@@ -15,16 +15,24 @@ if ($_SESSION['loggedin'] != true) {
 <head>
 
         <script>
+            
+//            function delbtn(){
+//                    var checkSubject
+//                    checkSubject = document.getElementById("delbton").innerHTML = "<?php ltest(); ?>";
+//            
+//            }        
 
-           document.getElementById("delete").innerHTML = 5 + 6;
 
         </script>
 
     </head>
 
-    
-    <button type="button" onclick="delbtn()" id="del">Verwijder mijn gegevens</button>
+    <form>
+     
+    <button type="button" onclick="delbtn()" id="delbton">Verwijder mijn gegevens</button>
+    </form>
 
+   
 <?php
     $query= "SELECT * FROM `tjk_users` WHERE `username` = '$user' ";
 
@@ -42,20 +50,16 @@ if ($_SESSION['loggedin'] != true) {
         } 
         
         
+        
+        
+        
+        function ltest(){
+            
+            echo "Het werk zo ook";
+        }
     
     
       
-        
-        
-        
-       $sql="DELETE FROM kunstwerk WHERE id='$_GET[id]'";
-
-
-
-if(mysqli_query($con, $sql))
-
-        header("refresh:1; url=collection.php");  
-        
         
         
 
