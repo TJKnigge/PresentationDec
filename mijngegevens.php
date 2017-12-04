@@ -15,20 +15,27 @@ if ($_SESSION['loggedin'] != true) {
 
         <script>
             
-//            function delbtn(){
-//                    var checkSubject
-//                    checkSubject = document.getElementById("delbton").innerHTML = "<?php ltest(); ?>";
-//            
-//            }        
+            function delbtn(){
+                    var checkSubject
+                    checkSubject = document.getElementById("delbton").innerHTML = "<?php ltest(); ?>";
+            
+            }        
+
+              $("document").ready(function(){
+                  $("#delbton").click(function(){
+                      $(this).css("color", "red");
+                  });
+              });
+
 
         </script>
 
     </head>
-<!--
+
     <form>
      
-    <button type="button" onclick="delbtn()" id="delbton">Verwijder mijn gegevens</button>
-    </form>-->
+    <button class=primary type="button" onclick="delbtn()" id="delbton">Verwijder mijn gegevens</button>
+    </form>
   
 <?php
     $query= "SELECT * FROM `tjk_users` WHERE `username` = '$user' ";

@@ -9,7 +9,7 @@ function showHeader(){
             <head>
                 
                 <link rel = "stylesheet" type = "text/css" href = "StyleSheet.css">
-                
+                <script src="jquery-3.2.1.js"></script>
                 <script>
                 function logout(){
                     document.location="Logout.php";
